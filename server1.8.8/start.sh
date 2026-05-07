@@ -1,0 +1,1 @@
+java -Xms512M -Xmx1024M -jar paper-1.8.8-445.jar nogui
