@@ -1,0 +1,15 @@
+{
+    "setupTasks": [],
+  
+    "tasks": {
+      "start EaglerProxy": {
+        "name": "start EaglerProxy",
+        "command": "cd eaglerproxy-1.1.0/build && node index.js"
+      },
+      "start Paper": {
+        "name": "start Paper",
+        "command": "cd server && java -Xmx512M -jar paper-1.8.8-445.jar"
+      }
+    }
+  }
+  

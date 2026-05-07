@@ -1,0 +1,44 @@
+[11:08:17] [Server thread/INFO]: Starting minecraft server version 1.8.8
+[11:08:17] [Server thread/WARN]: To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+[11:08:17] [Server thread/INFO]: Loading properties
+[11:08:17] [Server thread/INFO]: Default game type: SURVIVAL
+[11:08:17] [Server thread/INFO]: This server is running CraftBukkit version git-PaperSpigot-445 (MC: 1.8.8) (Implementing API version 1.8.8-R0.1-SNAPSHOT)
+[11:08:17] [Server thread/INFO]: Debug logging is disabled
+[11:08:17] [Server thread/INFO]: Spigot Timings: true - Verbose: true - Interval: 5m - Length: 60m
+[11:08:17] [Server thread/INFO]: Server Ping Player Sample Count: 12
+
+[11:08:17] [Server thread/INFO]: Using 4 threads for Netty based IO
+[11:08:17] [Server thread/INFO]: Data value allowed items: 
+[11:08:17] [Server thread/WARN]: java.lang.NoSuchFieldException: modifiers
+
+[11:08:17] [Server thread/WARN]: 	at java.base/java.lang.Class.getDeclaredField(Class.java:2612)
+
+[11:08:17] [Server thread/WARN]: 	at org.github.paperspigot.PaperSpigotConfig.stackableBuckets(PaperSpigotConfig.java:192)
+
+[11:08:17] [Server thread/WARN]: 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+
+[11:08:17] [Server thread/WARN]: 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+
+[11:08:17] [Server thread/WARN]: 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+[11:08:17] [Server thread/WARN]: 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+
+[11:08:17] [Server thread/WARN]: 	at org.github.paperspigot.PaperSpigotConfig.readConfig(PaperSpigotConfig.java:84)
+
+[11:08:17] [Server thread/WARN]: 	at org.github.paperspigot.PaperSpigotConfig.init(PaperSpigotConfig.java:62)
+
+[11:08:17] [Server thread/WARN]: 	at net.minecraft.server.v1_8_R3.DedicatedServer.init(DedicatedServer.java:181)
+
+[11:08:17] [Server thread/WARN]: 	at net.minecraft.server.v1_8_R3.MinecraftServer.run(MinecraftServer.java:563)
+
+[11:08:17] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:840)
+
+[11:08:17] [Server thread/INFO]: Generating keypair
+[11:08:17] [Server thread/INFO]: Starting Minecraft server on *:25565
+[11:08:17] [Server thread/INFO]: Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system unstability.
+[11:08:17] [Server thread/INFO]: Using epoll channel type
+[11:08:17] [Server thread/WARN]: **** FAILED TO BIND TO PORT!
+[11:08:17] [Server thread/WARN]: The exception was: java.io.IOException: Error during bind(...): Address already in use
+[11:08:17] [Server thread/WARN]: Perhaps a server is already running on that port?
+[11:08:17] [Server thread/INFO]: Stopping server
+[11:08:17] [Server thread/INFO]: Saving players
