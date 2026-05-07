@@ -6,9 +6,13 @@
         "name": "start EaglerProxy",
         "command": "cd eaglerproxy-1.1.0/build && node index.js"
       },
-      "start Paper": {
-        "name": "start Paper",
-        "command": "cd server && java -Xmx512M -jar paper-1.8.8-445.jar"
+      "start Paper 1.8.8": {
+        "name": "start Paper 1.8.8",
+        "command": "cd server1.8.8 && java -Xmx512M -jar paper-1.8.8-445.jar"
+      },
+      "start Paper 1.12.2": {
+        "name": "start Paper 1.12.2",
+        "command": "cd server1.12.2 && java -Xmx512M -jar paper.jar"
       }
     }
   }
