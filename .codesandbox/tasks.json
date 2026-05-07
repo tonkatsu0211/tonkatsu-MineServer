@@ -13,6 +13,10 @@
       "start Paper 1.12.2": {
         "name": "start Paper 1.12.2",
         "command": "cd server1.12.2 && java -Xmx512M -jar paper.jar"
+      },
+      "push": {
+        "name": "push",
+        "command": "git add . || true && git commit -m 'update' || true && git push -u origin main"
       }
     }
   }
