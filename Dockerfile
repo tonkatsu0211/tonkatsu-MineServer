@@ -1,6 +1,6 @@
 FROM eclipse-temurin:17
 
-WORKDIR /server
+WORKDIR /server1.12.2
 
 COPY . .
 
