@@ -1,0 +1,40 @@
+import java.io.IOException;
+
+public class MainLauncher {
+    public static void main(String[] args) throws Exception {
+
+        // HTTPサーバー起動（別スレッド）
+        new Thread(() -> {
+            try {
+                com.sun.net.httpserver.HttpServer server =
+                    com.sun.net.httpserver.HttpServer.create(
+                        new java.net.InetSocketAddress(8080), 0
+                    );
+
+                server.createContext("/health", ex -> {
+                    String res = "OK";
+                    ex.sendResponseHeaders(200, res.length());
+                    ex.getResponseBody().write(res.getBytes());
+                    ex.close();
+                });
+
+                server.start();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }).start();
+
+        // Paper起動（同プロセス内じゃなく外部プロセス）
+        ProcessBuilder pb = new ProcessBuilder(
+            "java",
+            "-Xms512M",
+            "-Xmx1G",
+            "-jar",
+            "paper.jar",
+            "nogui"
+        );
+
+        pb.inheritIO();
+        pb.start();
+    }
+}
