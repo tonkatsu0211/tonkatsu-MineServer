@@ -30,7 +30,7 @@ public class MainLauncher {
             "-Xms512M",
             "-Xmx1G",
             "-jar",
-            "paper.jar",
+            "server1.12.2/paper.jar",
             "nogui"
         );
 
