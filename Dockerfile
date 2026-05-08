@@ -1,6 +1,10 @@
 FROM eclipse-temurin:17
 
+RUN echo "debug message!"
+
 COPY . .
+
+WORKDIR /server1.12.2
 
 RUN ls -la
 
