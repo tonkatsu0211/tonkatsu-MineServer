@@ -1,3 +1,14 @@
+FROM node:20
+
+WORKDIR /app
+
+COPY package*.json ./
+RUN npm install
+
+COPY . .
+
+CMD ["node", "server.js"]
+
 FROM eclipse-temurin:17
 
 RUN echo "debug message!"
