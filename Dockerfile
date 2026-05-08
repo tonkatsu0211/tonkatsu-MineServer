@@ -5,4 +5,4 @@ COPY . .
 EXPOSE 25565
 EXPOSE 8080
 
-CMD ["java", "MainLauncher"]
+CMD ["java", "main.jar"]
