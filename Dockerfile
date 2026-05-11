@@ -5,6 +5,5 @@ COPY . .
 WORKDIR /server1.12.2
 
 EXPOSE 25565
-EXPOSE 8080
 
-CMD ["java", "main.jar"]
+CMD ["java", "-Xms512M", "-Xmx1024M", "-jar", "paper.jar", "nogui"]
