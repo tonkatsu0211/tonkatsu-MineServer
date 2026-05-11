@@ -10,4 +10,4 @@ RUN echo "require('http').createServer((req,res)=>res.end('OK')).listen(process.
 EXPOSE 25565
 EXPOSE 3000
 
-CMD sh -c "node health.js & java -Djava.net.preferIPv4Stack=true -Xms128M -Xmx512M -jar paper.jar nogui"
+CMD sh -c "node health.js & java -Djava.net.preferIPv4Stack=true -Xms64M -Xmx256M -jar paper.jar nogui"
