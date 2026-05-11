@@ -1,8 +1,8 @@
 FROM eclipse-temurin:17
 
-WORKDIR /server1.12.2
-
 COPY . .
+
+WORKDIR /server1.12.2
 
 EXPOSE 25565
 
